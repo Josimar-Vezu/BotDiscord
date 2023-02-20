@@ -1,0 +1,26 @@
+{
+  "dependencies": {
+    "discord.js": "^14.7.1",
+    "dotenv": "^16.0.3"
+  },
+  "name": "botdiscord",
+  "description": "bot para discord",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Josimar-Vezu/BotDiscord.git"
+  },
+  "keywords": [
+    "bot-discord"
+  ],
+  "author": "Josimar Vezu Ramires",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Josimar-Vezu/BotDiscord/issues"
+  },
+  "homepage": "https://github.com/Josimar-Vezu/BotDiscord#readme"
+}
