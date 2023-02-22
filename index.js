@@ -1,10 +1,5 @@
 const { Client, Events, GatewayIntentBits, Collection } = require('discord.js');
 
-// dotenv
-const dotenv = require('dotenv')
-dotenv.config()
-const { TOKEN } = process.env
-
 // importação dos comandos
 const fs = require("node:fs")
 const path = require("node:path")
@@ -26,10 +21,14 @@ for (const file of commandFiles) {
 	}
 }
 
-console.log(client.commands)
-
 client.once(Events.ClientReady, c => {
 	console.log(`Pronto! Login Realizado como ${c.user.tag}`)
 });
 
 client.login(TOKEN)
+
+//listening de interação com bot
+client.on(Events.InteractionCreate, interaction => {
+	if (!interaction.isChatInputCommandP()) return
+	console.log(interaction)
+})
